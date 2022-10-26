@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('Login.login');
+// });
+ 
+// ログイン
+// Route::post('Main/top', [LoginCtrl::class, 'checkLogin'])->name('Main.top');
+ 
+ 
+Route::get('/', [LoginCtrl::class, 'checkLogin']);
