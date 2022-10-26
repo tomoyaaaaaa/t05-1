@@ -22,4 +22,4 @@ use Illuminate\Support\Facades\Route;
 // Route::post('Main/top', [LoginCtrl::class, 'checkLogin'])->name('Main.top');
  
  
-Route::get('/', [LoginCtrl::class, 'index']);
+Route::get('/', [LoginCtrl::class, 'checkLogin']);

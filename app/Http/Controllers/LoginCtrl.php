@@ -7,15 +7,18 @@ use Illuminate\Http\Request;
 class LoginCtrl extends Controller
 {
 
-    
+    public function checkLogin() {
+        return Login::getPwdById(100);
+    }
+
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function index()
     {
-        return Login::getPwdById($id);
+    
     }
 
     /**
