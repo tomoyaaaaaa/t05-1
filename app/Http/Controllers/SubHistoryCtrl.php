@@ -6,6 +6,25 @@ use Illuminate\Http\Request;
 
 class SubHistoryCtrl extends Controller
 {
+    public function showAllSubHistory()
+    {
+
+    }
+    /**
+     * 最後に申請した住所変更届の内容をSddChange
+     */
+    public function showAddChangeHistory()
+     {
+
+     }
+
+     public function showPracticeExamHistory()
+     {
+         
+     }
+
+
+
     /**
      * Display a listing of the resource.
      *
